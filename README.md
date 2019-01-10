@@ -1,3 +1,3 @@
 # ShareINU Application
 
-This application is a platform that makes it easy for students of Incheon University to share their products.
+This application is a platform that makes it easy for students of INU to share their products.
