@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_mypage"
+    android:background="@color/gray"
+    tools:context=".Fragment.FifthFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="23dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마이 페이지"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/settings" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/myblue">
+
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="31dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/face"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/pro_s" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="52dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            app:srcCompat="@drawable/crown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="20dp"
+            android:layout_marginTop="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:textSize="13dp"
+            android:text="랭킹 순위" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="33dp"
+            android:text="3002"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="190dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/mys_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="33dp"
+                android:text="내가 쓴 글"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="3dp"
+            android:background="@color/white"
+            android:layout_width="190dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/myt_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="47dp"
+                android:text="거래 목록"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/myr_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="65dp"
+                android:text="랭킹"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/myc_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="찜"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/notice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="90dp"
+                android:text="공지사항"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/faq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="90dp"
+                android:text="FAQ"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/qa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="90dp"
+                android:text="문의"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="26dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="28dp"
+                android:background="@drawable/re" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="90dp"
+                android:text="신고"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <!--app:srcCompat="@drawable/profile"-->
+    <!--android:text="최세정"-->
+    <!--android:text="디자인학부 예술체육대학"-->
+
+
+
+<!--<ImageView-->
+<!--android:id="@+id/face"-->
+<!--android:layout_width="50dp"-->
+<!--android:layout_height="50dp"-->
+<!--android:layout_marginBottom="8dp"-->
+<!--android:layout_marginEnd="8dp"-->
+<!--android:layout_marginStart="8dp"-->
+<!--android:layout_marginTop="8dp"-->
+<!--app:layout_constraintBottom_toBottomOf="@+id/bluebar"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.057"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:layout_constraintVertical_bias="0.902"-->
+
+    <!--/>-->
+
+<!--<ImageView-->
+<!--android:id="@+id/number"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginBottom="28dp"-->
+<!--android:layout_marginEnd="8dp"-->
+<!--android:layout_marginStart="8dp"-->
+<!--app:layout_constraintBottom_toBottomOf="@+id/bluebar"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.846"-->
+<!--app:layout_constraintStart_toEndOf="@+id/profileBtn"-->
+<!--app:srcCompat="@drawable/number" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/department"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginBottom="5dp"-->
+<!--android:layout_marginStart="8dp"-->
+<!--android:layout_marginTop="8dp"-->
+<!--android:textColor="@android:color/background_light"-->
+<!--android:textSize="12sp"-->
+<!--app:layout_constraintBottom_toBottomOf="@+id/bluebar"-->
+<!--app:layout_constraintStart_toEndOf="@+id/face"-->
+<!--app:layout_constraintTop_toTopOf="@+id/bluebar"-->
+<!--app:layout_constraintVertical_bias="0.731" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/name"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginBottom="8dp"-->
+<!--android:layout_marginStart="8dp"-->
+<!--android:layout_marginTop="8dp"-->
+<!--android:text=""-->
+<!--android:textColor="@android:color/background_light"-->
+<!--android:textSize="18sp"-->
+<!--android:textStyle="bold"-->
+<!--app:layout_constraintBottom_toBottomOf="@+id/bluebar"-->
+<!--app:layout_constraintStart_toEndOf="@+id/face"-->
+<!--app:layout_constraintTop_toTopOf="@+id/bluebar"-->
+<!--app:layout_constraintVertical_bias="0.379" />-->
+
+    <!--app:srcCompat="@drawable/oval3"-->
+    <!--android:background="@drawable/oval3"-->

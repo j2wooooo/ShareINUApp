@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "654239421723",
+    "firebase_url": "https://sharenu-a8ed6.firebaseio.com",
+    "project_id": "sharenu-a8ed6",
+    "storage_bucket": "sharenu-a8ed6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654239421723:android:74f4476464661e6c",
+        "android_client_info": {
+          "package_name": "com.example.shareinuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654239421723-cn31ub8599mu4i050h0uk15r3l7e3rk3.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "654239421723-cn31ub8599mu4i050h0uk15r3l7e3rk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lnobYa5DYnOZ0I9RUkxKaDOEf7lN_c0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

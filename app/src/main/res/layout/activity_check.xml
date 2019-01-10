@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    tools:context=".CheckActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="40dp"
+    android:gravity="center">
+<TextView
+    android:gravity="center"
+        android:id="@+id/textView1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동의(체크)리스트 확인"
+        android:textSize="15dp"
+    android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/checkBox1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/checkbox_checkbox1"
+        android:textColor="#000000"
+        android:text="" />
+
+        <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+            android:text="대리인을 통한 공유는 불가능합니다. 본인이 직접 공유합니다."
+            android:textSize="11.5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/checkBox2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/checkbox_checkbox1"
+        android:textColor="#000000" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="반납시간을 초과하면 연체료가 부과될 수 있으며, 공유할 때 설명에 따릅니다."
+            android:textSize="11.5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/checkBox3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:button="@android:color/transparent"
+        android:background="@drawable/checkbox_checkbox1"
+        android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="거래로 인해 아이템 등록자에게 발생한 모든 손해는 빌리는 사람이 배상합니다."
+                android:textSize="11.5dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/activity_check_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:button="@android:color/transparent"
+        android:background="@color/colorPrimary"
+        android:enabled="false"
+        android:textColor="#ffffff"
+        android:text="동의합니다." />
+</LinearLayout>
+
+<!--<ImageView-->
+<!--android:layout_marginTop="18dp"-->
+<!--android:layout_marginLeft="10dp"-->
+<!--android:layout_width="220dp"-->
+<!--android:layout_height="30dp"-->
+<!--android:background="@drawable/check2" />-->
+
+<!--<ImageView-->
+<!--android:layout_marginTop="18dp"-->
+<!--android:layout_marginLeft="10dp"-->
+<!--android:layout_width="220dp"-->
+<!--android:layout_height="30dp"-->
+<!--android:background="@drawable/check3" />-->
+
+<!--<ImageView-->
+<!--android:layout_marginTop="18dp"-->
+<!--android:layout_marginLeft="10dp"-->
+<!--android:layout_width="220dp"-->
+<!--android:layout_height="30dp"-->
+<!--android:background="@drawable/check4" />-->
+
+
+    <!--android:background="@color/colorPrimary"-->

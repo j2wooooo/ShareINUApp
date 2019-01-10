@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/home"
+        textSize="6dp"
+        title="홈"/>
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/search"
+        textSize="6dp"
+        title="검색"/>
+    <tab
+        id="@+id/tab_post"
+        icon="@drawable/upload"
+        textSize="6dp"
+        title="업로드"/>
+    <tab
+        id="@+id/tab_message"
+        icon="@drawable/chatting"
+        textSize="6dp"
+        title="채팅"/>
+    <tab
+        id="@+id/tab_mypage"
+        icon="@drawable/user"
+        textSize="6dp"
+        title="MY"/>
+</tabs>
+
+    <!--<tab-->
+    <!--id="@+id/tab_food"-->
+    <!--icon="@drawable/ic_restaurants"-->
+    <!--title="Food" />-->

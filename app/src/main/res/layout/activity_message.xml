@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".chat.MessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tab_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:background="@drawable/bluebackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/messageActivity_name"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/complete_button"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:onClick="mOnPopupClick_complete"
+                android:text="거래완료"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messageActivity_relativelayout1"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageActivity_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messageActivity_relativelayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/messageActivity_plus_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/plus"
+                android:onClick="mOnPopupClick" />
+
+            <Button
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/messageActivity_plus_button"
+                android:background="@drawable/smile" />
+
+            <EditText
+                android:id="@+id/messageActivity_editText"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="47dp"
+                android:background="@drawable/text_field" />
+
+            <Button
+                android:id="@+id/messageActivity_button"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/seend"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageActivity_relativelayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/messageActivity_hand_button"
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/messageActivity_draw_button"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="99dp"
+            android:background="@drawable/direct"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageActivity_hand_button"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="-36dp"
+            android:text="직거래"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/messageActivity_draw_button"
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="88dp"
+            android:background="@drawable/box"
+            android:onClick="mOnPopupClick_drawer"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/messageActivity_hand_button"
+            android:layout_marginEnd="95dp"
+            android:layout_marginTop="-36dp"
+            android:text="사물함"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
+

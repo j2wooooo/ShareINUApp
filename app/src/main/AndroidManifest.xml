@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shareinuapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PostActivity" />
+        <activity android:name=".PostActivity2" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".chat.MessageActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LockerActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".LockerExplainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".CompleteActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".CheckActivity"
+            android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+
+</manifest> <!-- android:windowSoftInputMode="adjustPan" -->
